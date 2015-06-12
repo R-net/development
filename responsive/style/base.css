@@ -1,0 +1,14 @@
+@charset utf-8;
+
+/*padding、borderの幅をwidthに含めない*/
+html {
+	box-sizing: border-box;
+}
+
+/*横幅で文字が大きくなるのを禁止*/
+body {
+	-webkit-text-size-adjust:100%;
+}
+img {
+	max-width:100%;
+}

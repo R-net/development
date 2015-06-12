@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- IE分岐タグでclassを付与 cssでの切り替えが楽 -->
+	<!--[if IE 7]>
+	<html lang="ja" class="no-js ie7" prefix="og: http://ogp.me/ns#"><![endif]-->
+	<!--[if IE 8]>
+	<html lang="ja" class="no-js ie8 lt-ie8" prefix="og: http://ogp.me/ns#"><![endif]-->
+	<!--[if IE 9]>
+	<html lang="ja" class="no-js ie9 lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
+	<!--[if gt IE 9]><!-->
+<html lang="ja" class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<!-- prefixの説明：　http://ogp.me/ -->
+<script src="../lib/jquery-2.1.4.min.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<!-- 検索エンジンが最重要視する要素。ここにキーワードが入っていないとほぼ絶望的
+	検索結果には最大全角34文字程度が表示され、残りは省略される（GoogleのWeb表示では30文字程度） -->
+	<title>Document</title>
+	<!-- viewport指定 -->
+	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=1240,minimum-scale=0,maximum-scale=10">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<!-- サイトの説明 -->
+	<!-- 検索結果には最大全角120文字程度が表示される（スマホは50文字程度。ただしデバイスなどにより異なる）
+	検索キーワードは太字になる
+	順位向上そのものには大きく影響はしない -->
+	<meta name="description" itemprop="description" content="" />
+	<!-- keywordはseoには関係なし -->
+	<!-- http://googlewebmastercentral.blogspot.jp/2009/09/google-does-not-use-keywords-meta-tag.html -->
+	<meta name="keywords"  content="keyword,keyword2" />
+	<!-- IEに互換表示をさせない -->
+	<!-- IE=7のようにバージョンを指定する事も可能-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- ファビコン -->
+	<link rel="shortcut icon" href="絶対パス">
+	<!-- 意図しない番号リンクは設置しない -->
+	<meta name="format-detection" content="telephone=no">
+	<!-- スマートフォン用　ウェブクリップアイコン -->
+	<!-- アンドロイドではベーシック認証がかかっていると表示されない場合がある -->
+	<link rel="apple-touch-icon" href="絶対パス" />
+	<!-- URL正規化 -->
+	<!-- http://googlewebmastercentral.blogspot.jp/2013/04/5-common-mistakes-with-relcanonical.html -->
+	<!-- https://www.suzukikenichi.com/blog/5-common-mistakes-with-relcanonical/ -->
+	<link rel="canonical" href="" />
+	<!-- お問い合わせやヘルプページののlink要素 -->
+	<link rel="help" href="http://example.html" title="ヘルプ" />
+	<!-- サイトマップの場所を記述するのlink要素 -->
+	<link rel="contents" href="/example.html" />
+	<!-- サイトのトップページの記述 -->
+	<link rel="index" href="/example.html" />
+	<!-- RSSページの記述のlink要素 -->
+	<link rel="alternate" type="application/rss+xml" title="" href="絶対パス" />
+	<!-- スマートフォン専用ページがある場合 -->
+	<!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.example.com/page-1" /> -->
+	<!-- https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices/feature-phones?hl=ja -->
+	<!-- OGP -->
+	<!-- 変更したときはデバッカーからキャッシュ削除が必要 -->
+	<meta property="og:title" content="" />
+	<meta property="og:type" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta property="fb:admins" content="" />
+	<meta property="fb:app_id" content="1460916744121378" />
+	<!-- twitter cardの使用は登録が必要 -->
+	<meta name="twitter:card" content="" />
+	<meta name="twitter:site" content="" />
+	<meta name="twitter:domain" content="" />
+	<meta name="twitter:description" content="" />
+
+	<!-- IE9以下のhtml5対応 -->
+	<!--[if lt IE 9]>
+		<script src="/assets/scripts/lib/html5shiv.js"></script>
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="/assets/styles/ie7.css">
+	<![endif]-->
+</head>
+<body>
+<h2>viewport</h2>
+	<a href="http://blog.ousaan.com/index.cgi/links/20130925.html">blog.鶯梭庵</a>
+<h2>OGP</h2>
+	<a href="https://ferret-plus.com/610">FacebookのOGP設定がわかるサイト6選＋1</a>
+	<a href="http://millkeyweb.com/facebook-ogp/">Facebookなどでサイトが共有された時、リッチ表示するOGPの設定</a>
+	<a href="https://developers.facebook.com/tools/debug/">facebook OGPデバッカー</a>
+	<a href="http://www.coprosystem.co.jp/tipsblog/2014/05/01.html">Twitterカード</a>
+</body>
+</html>
